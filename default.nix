@@ -1,5 +1,5 @@
 # with import ./..;
-{ stdenv, diamond, ncbi-blast, perlPackages, openssl, gnupg1orig, parallel, unzip }:
+{ stdenv, diamond, ncbi-blast, perlPackages, openssl, gnupg1orig, parallel, unzip, writeScript }:
 
 stdenv.mkDerivation rec {
   name = "inparanoid-${version}";
